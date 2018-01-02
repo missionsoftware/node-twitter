@@ -1,0 +1,13 @@
+{
+  "name": "node-twitter",
+  "version": "1.0.0",
+  "description": "Demo web service showing integration with twitter",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "author": "Mike Talbot <mike.talbot@missionsoftware.co.uk>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
