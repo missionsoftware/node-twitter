@@ -3,6 +3,8 @@ const request = require('request')
 const bodyParser = require('body-parser')
 const app = express()
 
+const PORT = process.env.PORT || 3000
+
 // Obtain twitter OAuth credentials from environment variables.
 const CONSUMER_KEY = process.env.TWITTER_CONSUMER_KEY
 const CONSUMER_SECRET = process.env.TWITTER_CONSUMER_SECRET
@@ -49,7 +51,7 @@ app.post('/', (req, res) => {
 })
 
 // Start the server.
-app.listen(3000, () => console.log('Demo twitter app listening on port 3000'))
+app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
 
 /* Potential improvements:
